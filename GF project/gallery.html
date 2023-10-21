@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery - My Girlfriend's Website</title>
+     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1>Gallery</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            
+            <li><a href="lovestory.html">Love Story</a></li>
+            
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Our Beautiful Moments</h2>
+            <div class="image-container">
+                <div class="image" onmouseover="showText(this)" onmouseout="hideText(this)">
+                    <img src="image1.jpg" alt="Image 1">
+                    <div class="image-text">Our First night</div>
+                </div>
+                <div class="image" onmouseover="showText(this)" onmouseout="hideText(this)">
+                    <img src="image2.jpg" alt="Image 2">
+                    <div class="image-text">Magical and unbelievable</div>
+                </div>
+				<div class="image" onmouseover="showText(this)" onmouseout="hideText(this)">
+                    <img src="image3.jpg" alt="Image 2">
+                    <div class="image-text">Our fisrt date, saw was scary but losing you is scarier</div>
+                </div>
+				<div class="image" onmouseover="showText(this)" onmouseout="hideText(this)">
+                    <img src="image4.jpg" alt="Image 2">
+                    <div class="image-text">Campus date</div>
+                </div>
+                <!-- Add more images and descriptions as needed -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023</p>
+    </footer>
+    <script>
+        function showText(image) {
+            const text = image.querySelector(".image-text");
+            text.style.display = "block";
+        }
+
+        function hideText(image) {
+            const text = image.querySelector(".image-text");
+            text.style.display = "none";
+        }
+    </script>
+</body>
+</html>
